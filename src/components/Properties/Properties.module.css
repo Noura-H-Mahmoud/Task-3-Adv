@@ -1,0 +1,107 @@
+.properties {
+    width: 100%;
+    padding: 100px var(--main-padding) var(--main-padding) var(--main-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.properties h1 {
+    font-size: var(--large-font-size);
+    width: 360px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    width: 360px;
+    background-color: var(--ninth-color);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card p {
+    color: var(--second-color);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.priceLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Info {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(232, 232, 220, .7);
+}
+
+.Info p {
+    margin-right: 33px;
+    color: #767573;
+}
+
+.Info b {
+    color: var(--second-color);
+}
+
+.priceLine button {
+    padding: 4px 10px;
+    border: none;
+    background-color: var(--button-color);
+    border-radius: 4px;
+}
+
+.priceLine span {
+    color: var(--main-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--fourth-font-weight);
+}
+
+.card h2 {
+    font-size: 22px;
+    font-weight: var(--fourth-font-weight);
+}
+
+.mainButton {
+    width: 210px;
+    background-color: var(--second-color);
+    color: var(--third-color);
+    padding: 10px;
+    margin: auto !important;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+@media (max-width: 1350px) {
+    .properties {
+        padding: var(--main-padding) var(--response-main-padding);
+    }
+}
+
+@media (max-width: 500px) {
+    .properties h1 {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,46 @@
+.cardsContainer {
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.card {
+    padding: 0 33px;
+}
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.cardContainer.gap {
+    justify-content: space-between;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    padding: 33px 0;
+}
+
+.left {
+    align-items: center;
+    gap: 10px;
+}
+
+.right {
+    align-items: start;
+    justify-content: start;
+    gap: 3px;
+}
+
+.right span {
+    font-size: var(--small-font-size);
+    font-weight: var(--third-font-weight);
+}
+
+p {
+    color: #B2BAC7;
+}

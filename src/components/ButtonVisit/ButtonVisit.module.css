@@ -1,0 +1,38 @@
+.buttonVisit {
+    width: 170px;
+    height: 40px;
+    background-color: var(--second-color);
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: var(--third-color);
+}
+
+.widthLarge {
+    width: 80%;
+    height: 50px;
+}
+
+.icon {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    margin-right: 11px;
+    margin-left: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.largeIcon {
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width:800px) and (max-width: 1350px) {
+    .widthLarge {
+        width: 200px;
+    }
+}

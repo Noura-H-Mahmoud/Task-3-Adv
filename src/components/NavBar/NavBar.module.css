@@ -1,0 +1,156 @@
+nav {
+  width: 100%;
+}
+
+.topNav,
+.bottomNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--response-main-padding) var(--main-padding);
+  background-color: var(--third-color);
+}
+
+.bottomNav {
+  width: 100%;
+  padding: 30px var(--main-padding);
+  position: fixed;
+  z-index: 100;
+}
+
+.bottomNav.scrolled {
+  top: 0;
+  box-shadow: 0px 4px 16px 0px #1122110D;
+}
+
+.topNav {
+  border-bottom: 1px solid #f2f2f2;
+  gap: 10px;
+}
+
+.leftSide {
+  display: flex;
+}
+
+.leftSide {
+  gap: 30px;
+}
+
+.leftSide a:hover {
+  color: var(--main-color);
+}
+
+.email,
+.map {
+  font-size: var(--second-medium-font-size);
+  padding-right: 15px;
+  color: var(--main-color);
+}
+
+.leftSide a {
+  color: var(--fifth-color);
+}
+
+.border {
+  padding-left: 30px;
+  border-left: 1px solid rgba(232, 232, 220);
+}
+
+.logoSide h1 {
+  font-size: var(--medium-font-size);
+  letter-spacing: 3px;
+}
+
+.endSide {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.endSide a {
+  position: relative;
+  color: var(--second-color);
+}
+
+.endSide a::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: var(--main-color);
+  left: 0;
+  bottom: -4px;
+  transition: width .4s ease-in-out;
+  width: 0;
+}
+
+.endSide a:hover {
+  color: var(--main-color);
+}
+
+.endSide a:hover {
+  color: var(--main-color);
+}
+
+.endSide a:hover::after {
+  width: 100%;
+}
+
+.endSide a:nth-of-type(1) {
+  color: var(--main-color);
+}
+
+.menuToggle {
+  font-size: var(--large-font-size);
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: var(--third-color);
+}
+
+@media screen and (max-width:1350px) {
+  .endSide {
+    gap: 20px;
+  }
+
+  nav a {
+    font-size: var(--xxsmall-font-size);
+  }
+}
+
+@media (min-width: 992px) {
+
+  .menuToggle,
+  .display {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .bottomNav {
+    padding: var(--response-second-padding);
+  }
+
+  .topNav,
+  .endSide {
+    display: none;
+  }
+
+  .endSide {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .endSide.showMenu {
+    display: flex;
+  }
+
+  .bottomNav.showMenu {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+
+  .logoSide.showMenu {
+    display: none;
+  }
+}

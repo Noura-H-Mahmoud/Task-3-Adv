@@ -1,0 +1,120 @@
+.InfoAppartment {
+    width: 100%;
+    padding: var(--second-padding) var(--main-padding);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.InfoAppartment div:nth-of-type(1) {
+    position: relative;
+}
+
+.featuredIcon {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 4rem;
+    left: -3.8rem;
+}
+
+.contentInfo {
+    width: 30%;
+}
+
+.up h1 {
+    font-size: var(--xlarge-font-size);
+    margin-top: 11px;
+}
+
+.accordion {
+    width: 100%;
+    margin-top: 70px;
+    background-color: var(--ninth-color);
+    border-radius: 9px;
+}
+
+.item {
+    border-bottom: 1px solid rgba(232, 232, 220, .7);
+    cursor: pointer;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.title {
+    padding: var(--response-main-padding) 21px;
+    font-weight: var(--second-font-weight);
+    font-size: var(--xsmall-font-size);
+}
+
+.content {
+    width: 100%;
+    padding: var(--response-main-padding) 21px;
+    border-top: 1px solid rgba(232, 232, 220, .7);
+}
+
+.active .title {
+    color: var(--main-color);
+}
+
+.item .title:hover {
+    color: var(--main-color);
+}
+
+.item a {
+    color: #2C86FD;
+}
+
+.mainImage {
+    width: 350px;
+}
+
+@media (max-width: 1350px) {
+    .InfoAppartment {
+        padding: var(--main-padding) var(--response-second-padding);
+    }
+
+    .cardComponent {
+        width: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .InfoAppartment {
+        padding: var(--response-main-padding);
+    }
+
+    .InfoAppartment {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentInfo {
+        width: 74%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .contentInfo,
+    .cardComponent {
+        width: 100%;
+    }
+
+    .mainImage {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .featuredIcon {
+        left: -.3rem;
+    }
+}

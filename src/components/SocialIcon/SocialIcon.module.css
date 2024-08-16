@@ -1,0 +1,40 @@
+.socialIcons div {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: var(--seventh-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon a {
+    font-size: var(--xsmall-font-size);
+    color: var(--third-color);
+}
+
+.icon:hover {
+    background-color: #CDCDCD;
+    transition: color 0.3s ease;
+}
+
+.icon :hover::after {
+    width: 0%;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width:1350px) {
+    .socialIcons {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .socialIcons a {
+        color: var(--third-color);
+    }
+}

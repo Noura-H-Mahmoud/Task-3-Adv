@@ -1,0 +1,107 @@
+.BestDeal {
+    width: 100%;
+    background-color: var(--ninth-color);
+    padding: 75px var(--main-padding);
+}
+
+.BestDeal .up,
+.BestDeal .down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.down {
+    width: 100%;
+    gap: 70px;
+    margin-top: 60px;
+}
+
+.houseDiv {
+    width: 50%;
+}
+
+.house {
+    width: 100%;
+}
+
+.left h1 {
+    width: 330px;
+    font-size: var(--large-font-size);
+    margin-top: 10px;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+
+.end,
+.start {
+    width: 30%;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.end p {
+    color: #767573;
+}
+
+@media (max-width: 1350px) {
+    .BestDeal {
+        padding: var(--main-padding) var(--response-third-padding);
+    }
+
+    .down {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .end {
+        width: 40%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .down,
+    .up {
+        flex-direction: column;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .up {
+        gap: 1rem;
+    }
+
+    .end,
+    .houseDiv,
+    .start {
+        width: 80%;
+    }
+
+    .right {
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .end,
+    .houseDiv,
+    .start {
+        width: 100%;
+    }
+}

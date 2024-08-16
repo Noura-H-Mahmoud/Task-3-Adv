@@ -1,0 +1,27 @@
+.contactBox {
+    width: 100%;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--third-color);
+    border-radius: 5px;
+}
+
+.contactBox a {
+    color: var(--second-color);
+    font-weight: var(--third-font-weight);
+    font-size: var(--xsmall-font-size);
+}
+
+@media (max-width: 992px) {
+
+    .contactBox a,
+    .contactBox p {
+        font-size: var(--xxsmall-font-size);
+    }
+    .contactBox img {
+        width: 25px;
+    }
+}

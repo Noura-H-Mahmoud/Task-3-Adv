@@ -1,0 +1,17 @@
+.title {
+    color: var(--eight-color);
+    font-size: var(--xsmall-font-size);
+    font-weight: var(--fourth-font-weight);
+    position: relative;
+    margin-left: 10px;
+}
+
+.title::before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 1rem;
+    background-color: var(--eight-color);
+    left: -.5rem;
+    bottom: .4rem;
+}
