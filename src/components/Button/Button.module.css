@@ -15,8 +15,11 @@
 .black {
     background-color: var(--second-color);
 }
+
 @media (max-width: 600px) {
-    .orange,.black{
+
+    .orange,
+    .black {
         width: 100px;
         font-size: var(--xxxsmall-font-size);
     }
