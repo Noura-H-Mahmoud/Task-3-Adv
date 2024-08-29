@@ -1,8 +1,7 @@
-import React from 'react'
 import styles from './Title.module.css'
 
-export default function Title(props) {
+export default function Title({title}) {
   return (
-    <div className={styles.title}>{props.title}</div>
+    <div className={styles.title}>{title}</div>
   )
 }

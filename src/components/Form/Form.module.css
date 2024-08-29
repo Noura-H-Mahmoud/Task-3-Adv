@@ -1,14 +1,4 @@
-.sectionForm {
-    width: 100%;
-    padding: 0 var(--main-padding) var(--main-padding);
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
 form {
-    width: 37%;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     border-radius: 10px;
     padding: 25px 20px;
@@ -43,54 +33,4 @@ form button {
     border-radius: 30px;
     font-size: 16px;
     margin-top: 10px;
-}
-
-iframe {
-    height: 80%;
-    border: none;
-    border-radius: 10px;
-    flex-grow: 1;
-}
-
-.contact {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-}
-
-.start {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-@media (max-width: 1288px) {
-    .sectionForm {
-        padding: var(--main-padding) var(--response-main-padding);
-    }
-
-    form {
-        width: 80%;
-    }
-
-    .start {
-        height: 650px;
-    }
-}
-
-@media (max-width: 992px) {
-    form {
-        width: 100%;
-    }
-
-    .sectionForm,
-    .start {
-        gap: 20px;
-    }
-}
-
-@media (max-width: 787px) {
-    .contact {
-        flex-direction: column;
-    }
 }

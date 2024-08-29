@@ -11,7 +11,7 @@
 }
 
 .closerView .background {
-    background-image: url(../../assets/images/contact-bg.jpg);
+    background-image: url(../../assets/images/img.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,11 +24,16 @@
     position: relative;
 }
 
-.closerView .background img {
-    width: 65%;
+.closerView .background .imgVideo {
     position: absolute;
-    border-radius: 10px;
     bottom: -13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closerView .background .imgVideo img {
+    border-radius: 10px;
 }
 
 .boxes {
@@ -36,7 +41,24 @@
     padding: 100px var(--main-padding);
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 75px;
+}
+
+.iconVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--third-color);
+    color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 17px solid #f35525a4;
 }
 
 @media screen and (max-width:1400px) {
@@ -46,24 +68,27 @@
 }
 
 @media screen and (max-width:1200px) {
-    .closerView .background img {
-        bottom: -3.3rem;
+    .closerView .background .imgVideo img {
+        width: 90%;
     }
 }
 
 @media screen and (max-width:992px) {
+    .closerView .background .imgVideo {
+        bottom: -3.3rem;
+    }
 
     .closerView h1 {
         width: 90%;
         padding: 40px 10px;
     }
 
-    .closerView .background img {
-        width: 90%;
-    }
     .boxes {
+        flex-direction: column;
         padding: var(--response-main-padding);
-   }
+        margin-top: 5rem;
+        gap: 27px;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -75,8 +100,11 @@
         font-size: var(--medium-font-size);
     }
 }
+
 @media screen and (max-width:500px) {
-    .boxes {
-        margin-top: 5rem;
-   }
+    .iconVideo {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
 }

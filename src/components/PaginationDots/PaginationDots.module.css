@@ -1,0 +1,20 @@
+.paginationDots{
+    width: 100%;
+    padding:0 var(--main-padding) var(--main-padding);
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+}
+.paginationDots div{
+    width: 40px;
+    height: 40px;
+    background-color: var(--second-color);
+    color: var(--third-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active{
+    background-color: var(--main-color) !important;
+}

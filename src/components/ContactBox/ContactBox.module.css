@@ -1,5 +1,5 @@
 .contactBox {
-    width: 100%;
+    width: max-content;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     padding: 30px;
     display: flex;
@@ -16,11 +16,16 @@
 }
 
 @media (max-width: 992px) {
+    .contactBox {
+        width: 100%;
+        justify-content: space-between;
+    }
 
     .contactBox a,
     .contactBox p {
         font-size: var(--xxsmall-font-size);
     }
+
     .contactBox img {
         width: 25px;
     }

@@ -1,27 +1,20 @@
+.BestDealBackground{
+    background-color: var(--ninth-color);
+}
 .BestDeal {
-    width: 100%;
+    max-width: 1460px;
+    margin: auto;
     background-color: var(--ninth-color);
     padding: 75px var(--main-padding);
 }
 
-.BestDeal .up,
-.BestDeal .down {
+.BestDeal .up {
     display: flex;
     justify-content: space-between;
 }
 
-.down {
-    width: 100%;
-    gap: 70px;
-    margin-top: 60px;
-}
-
-.houseDiv {
-    width: 50%;
-}
-
-.house {
-    width: 100%;
+.BestDeal .up {
+    flex-wrap: wrap;
 }
 
 .left h1 {
@@ -36,43 +29,17 @@
     align-items: end;
 }
 
-.end,
-.start {
-    width: 30%;
-}
-
-.end {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.end p {
-    color: #767573;
-}
-
 @media (max-width: 1350px) {
     .BestDeal {
-        padding: var(--main-padding) var(--response-third-padding);
-    }
-
-    .down {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .end {
-        width: 40%;
-        margin: auto;
+        padding: var(--main-padding);
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1195px) {
 
-    .down,
-    .up {
-        flex-direction: column;
+    .left,
+    .right {
+        width: 100%;
     }
 
     .left {
@@ -81,27 +48,20 @@
         align-items: center;
     }
 
+    .right {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 992px) {
+
     .up {
         gap: 1rem;
     }
 
-    .end,
-    .houseDiv,
-    .start {
-        width: 80%;
-    }
-
-    .right {
-        gap: 10px;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .end,
-    .houseDiv,
-    .start {
-        width: 100%;
+    .left h1 {
+        text-align: center;
     }
 }

@@ -1,0 +1,56 @@
+.down {
+    width: 100%;
+    gap: 50px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.houseDiv {
+    width: 50%;
+}
+
+.house {
+    width: 100%;
+}
+
+.end,
+.start {
+    width: 30%;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.end p {
+    color: #767573;
+}
+
+@media (max-width: 1350px) {
+
+    .down {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .end {
+        width: 40%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .down {
+        flex-direction: column;
+        gap: 27px;
+    }
+    .end,
+    .houseDiv,
+    .start {
+        width: 100%;
+    }
+}

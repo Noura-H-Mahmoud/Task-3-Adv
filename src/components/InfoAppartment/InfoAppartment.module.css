@@ -1,10 +1,10 @@
 .InfoAppartment {
-    width: 100%;
+    max-width: 1460px;
+    margin: auto;
     padding: var(--second-padding) var(--main-padding);
     display: flex;
     justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
+    gap: 3%;
 }
 
 .InfoAppartment div:nth-of-type(1) {
@@ -21,11 +21,11 @@
     align-items: center;
     justify-content: center;
     bottom: 4rem;
-    left: -3.8rem;
+    left: 0;
 }
 
 .contentInfo {
-    width: 30%;
+    width: 32%;
 }
 
 .up h1 {
@@ -33,57 +33,21 @@
     margin-top: 11px;
 }
 
-.accordion {
-    width: 100%;
-    margin-top: 70px;
-    background-color: var(--ninth-color);
-    border-radius: 9px;
-}
-
-.item {
-    border-bottom: 1px solid rgba(232, 232, 220, .7);
-    cursor: pointer;
-}
-
-.item:last-child {
-    border-bottom: none;
-}
-
-.title {
-    padding: var(--response-main-padding) 21px;
-    font-weight: var(--second-font-weight);
-    font-size: var(--xsmall-font-size);
-}
-
-.content {
-    width: 100%;
-    padding: var(--response-main-padding) 21px;
-    border-top: 1px solid rgba(232, 232, 220, .7);
-}
-
-.active .title {
-    color: var(--main-color);
-}
-
-.item .title:hover {
-    color: var(--main-color);
-}
-
-.item a {
-    color: #2C86FD;
-}
-
 .mainImage {
     width: 350px;
+    padding-left: 50px;
 }
+.cardComponent {
+    height: max-content;
+    width: 36%;
+}
+@media (max-width: 1296px) {
 
-@media (max-width: 1350px) {
-    .InfoAppartment {
-        padding: var(--main-padding) var(--response-second-padding);
+    .InfoAppartment{
+        flex-wrap: wrap;
     }
-
     .cardComponent {
-        width: 60%;
+        width: 70%;
     }
 }
 
@@ -95,20 +59,15 @@
     .InfoAppartment {
         flex-direction: column;
         align-items: center;
+        gap: 17px;
     }
 
-    .contentInfo {
-        width: 74%;
+    .contentInfo,.cardComponent {
+        width: 100%;
     }
 }
 
 @media (max-width: 600px) {
-
-    .contentInfo,
-    .cardComponent {
-        width: 100%;
-    }
-
     .mainImage {
         width: 90%;
         margin-left: 20px;

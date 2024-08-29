@@ -1,0 +1,39 @@
+.accordion {
+    width: 100%;
+    margin-top: 70px;
+    background-color: var(--ninth-color);
+    border-radius: 9px;
+}
+
+.item {
+    border-bottom: 1px solid rgba(232, 232, 220, .7);
+    cursor: pointer;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.title {
+    padding: var(--response-main-padding) 21px;
+    font-weight: var(--second-font-weight);
+    font-size: var(--xsmall-font-size);
+}
+
+.content {
+    width: 100%;
+    padding: var(--response-main-padding) 21px;
+    border-top: 1px solid rgba(232, 232, 220, .7);
+}
+
+.active .title {
+    color: var(--main-color);
+}
+
+.item .title:hover {
+    color: var(--main-color);
+}
+
+.item a {
+    color: #2C86FD;
+}

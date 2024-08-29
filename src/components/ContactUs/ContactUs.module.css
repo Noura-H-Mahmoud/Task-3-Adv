@@ -1,6 +1,7 @@
 .contactUs {
     width: 100%;
     position: relative;
+    margin-bottom: 37rem;
 }
 
 .contactUs h1 {
@@ -16,7 +17,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 150px 0 300px;
+    padding: var(--main-padding) 0 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,16 +34,18 @@
     .formLanding {
         bottom: -83rem;
     }
+
+    .contactUs {
+        margin-bottom: 77rem;
+    }
 }
 
 @media (max-width: 992px) {
     .contactUs h1 {
         width: 90%;
     }
-}
 
-@media (max-width: 788px) {
     .formLanding {
-        bottom: -74rem;
+        bottom: -73rem;
     }
 }

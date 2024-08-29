@@ -11,7 +11,8 @@
 .cardContainer {
     display: flex;
     align-items: center;
-    gap: 21px;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .cardContainer.gap {
