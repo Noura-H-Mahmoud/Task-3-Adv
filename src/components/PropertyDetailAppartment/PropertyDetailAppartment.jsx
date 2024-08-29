@@ -27,16 +27,14 @@ export default function PropertyDetailAppartment() {
             id: 3,
             img: icon3,
             span: 'Payment',
-            para: 'Payment',
-            title: 'Process',
+            para: 'Payment Process',
             borderBottom: '1px solid rgba(232, 232, 220, .7)',
         },
         {
             id: 4,
             img: icon4,
             span: 'Safety',
-            title: 'Control',
-            para: '24/7 Under',
+            para: '24/7 Under Control',
         },
     ];
     const accordionItems = [
