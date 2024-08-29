@@ -13,12 +13,7 @@
     color: var(--third-color);
 }
 
-.icon:hover {
-    background-color: #CDCDCD;
-    transition: color 0.3s ease;
-}
-
-.icon :hover::after {
+.socialIcons .icon :hover::after {
     width: 0%;
 }
 

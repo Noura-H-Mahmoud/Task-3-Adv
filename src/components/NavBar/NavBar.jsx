@@ -5,6 +5,7 @@ import { faEnvelope, faMap, faXmark } from '@fortawesome/free-solid-svg-icons';
 import ButtonVisit from '../ButtonVisit/ButtonVisit';
 import SocialIcon from '../SocialIcon/SocialIcon';
 import { NavLink, Link } from 'react-router-dom';
+import NavTop from '../NavTop/NavTop';
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,23 +32,7 @@ export default function NavBar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.topNav}>
-        <div className={styles.leftSide}>
-          <div>
-            <a href="mailto:info@company.com" target="_blank">
-              <FontAwesomeIcon icon={faEnvelope} className={styles.email} />
-              info@company.com
-            </a>
-          </div>
-          <div className={styles.border}>
-            <a href="#">
-              <FontAwesomeIcon icon={faMap} className={styles.map} />
-              Sunny Isles Beach, FL 33160
-            </a>
-          </div>
-        </div>
-        <SocialIcon />
-      </div>
+      <NavTop />
       <div className={`${styles.bottomNav} ${isScrolled ? styles.scrolled : ''} ${isMenuOpen ? styles.showMenu : ''}`}>
         <div className={`${styles.logoSide} ${isMenuOpen ? styles.showMenu : ''}`}>
           <Link to={'/Task-3-Adv/'}>
