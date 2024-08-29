@@ -1,6 +1,7 @@
-.BestDealBackground{
+.BestDealBackground {
     background-color: var(--ninth-color);
 }
+
 .BestDeal {
     max-width: 1460px;
     margin: auto;
@@ -17,9 +18,8 @@
     flex-wrap: wrap;
 }
 
-.left h1 {
+.BestDeal h1 {
     width: 330px;
-    font-size: var(--large-font-size);
     margin-top: 10px;
 }
 
@@ -61,7 +61,7 @@
         gap: 1rem;
     }
 
-    .left h1 {
+    .BestDeal h1 {
         text-align: center;
     }
 }

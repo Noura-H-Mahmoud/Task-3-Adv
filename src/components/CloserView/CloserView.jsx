@@ -4,13 +4,14 @@ import Box from '../Box/Box'
 import Title from '../Title/Title'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
+import HeadText from '../HeadText/HeadText'
 
 export default function CloserView() {
     return (
         <section className={styles.closerView}>
             <div className={styles.background}>
                 <Title title='VIDEO VIEW' />
-                <h1>Get Closer View & Different Feeling</h1>
+                <HeadText text='Get Closer View & Different Feeling' isWhite={true}/>
                 <div className={styles.imgVideo}>
                     <img src={videoFrame} alt="video" />
                     <div className={styles.iconVideo}>

@@ -1,0 +1,12 @@
+.whiteText,
+.blackText {
+    font-size: var(--large-font-size);
+}
+
+.whiteText {
+    color: var(--third-color);
+}
+
+.blackText {
+    color: var(--second-color);
+}

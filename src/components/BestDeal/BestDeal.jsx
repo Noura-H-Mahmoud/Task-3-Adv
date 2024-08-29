@@ -6,6 +6,7 @@ import BestDealContainer from '../BestDealContainer/BestDealContainer'
 import property from '../../assets/images/deal-01.jpg'
 import penthouse from '../../assets/images/deal-03.jpg'
 import Villa from '../../assets/images/deal-02.jpg'
+import HeadText from '../HeadText/HeadText'
 
 export default function BestDeal() {
     const [active, setactive] = useState('Appartment');
@@ -32,7 +33,7 @@ export default function BestDeal() {
                 <div className={styles.up}>
                     <div className={styles.left}>
                         <Title title='BEST DEAL' />
-                        <h1>Find Your Best Deal Right Now!</h1>
+                        <HeadText text='Find Your Best Deal Right Now!' isWhite={false}/>
                     </div>
                     <div className={styles.right}>
                         <Button

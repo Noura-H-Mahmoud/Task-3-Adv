@@ -10,7 +10,6 @@
 }
 
 .properties h1 {
-    font-size: var(--large-font-size);
     width: 360px;
     text-align: center;
 }

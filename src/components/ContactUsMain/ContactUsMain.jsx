@@ -5,6 +5,7 @@ import email from '../../assets/images/email-icon.png'
 import phone from '../../assets/images/phone-icon.png'
 import Form from '../Form/Form'
 import Map from '../Map/Map'
+import HeadText from '../HeadText/HeadText'
 
 export default function ContactUsMain() {
     return (
@@ -12,7 +13,7 @@ export default function ContactUsMain() {
             <div className={styles.contactUp}>
                 <div className={styles.contactLeft}>
                     <Title title='CONTACT US' />
-                    <h1>Get In Touch With Our Agents</h1>
+                    <HeadText text='Get In Touch With Our Agents' isWhite={false} />
                     <p>
                         When you really need to download free CSS templates, please remember our website TemplateMo. Also, tell your friends about our website. Thank you for visiting. There is a variety of Bootstrap HTML CSS templates on our website. If you need more information, please contact us.
                     </p>
