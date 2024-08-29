@@ -50,7 +50,7 @@ export default function NavBar() {
       </div>
       <div className={`${styles.bottomNav} ${isScrolled ? styles.scrolled : ''} ${isMenuOpen ? styles.showMenu : ''}`}>
         <div className={`${styles.logoSide} ${isMenuOpen ? styles.showMenu : ''}`}>
-          <Link to={'/Task-2/'}>
+          <Link to={'/Task-3-Adv/'}>
             <h1>VILLA</h1>
           </Link>
         </div>
@@ -66,10 +66,10 @@ export default function NavBar() {
           )}
         </button>
         <div className={`${styles.endSide} ${isMenuOpen ? styles.showMenu : ''}`}>
-          <NavLink to='/Task-2/' end className={({ isActive }) => (isActive ? styles.active : '')}>Home</NavLink>
-          <NavLink to='/Task-2/properties' className={({ isActive }) => (isActive ? styles.active : '')}>Properties</NavLink>
-          <NavLink to='/Task-2/detail' className={({ isActive }) => (isActive ? styles.active : '')}>Property Details</NavLink>
-          <NavLink to='/Task-2/contact' className={({ isActive }) => (isActive ? styles.active : '')}>Contact Us</NavLink>
+          <NavLink to='/Task-3-Adv/' end className={({ isActive }) => (isActive ? styles.active : '')}>Home</NavLink>
+          <NavLink to='/Task-3-Adv/properties' className={({ isActive }) => (isActive ? styles.active : '')}>Properties</NavLink>
+          <NavLink to='/Task-3-Adv/detail' className={({ isActive }) => (isActive ? styles.active : '')}>Property Details</NavLink>
+          <NavLink to='/Task-3-Adv/contact' className={({ isActive }) => (isActive ? styles.active : '')}>Contact Us</NavLink>
           <ButtonVisit />
           <div className={styles.display}>
             <SocialIcon />

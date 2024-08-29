@@ -12,10 +12,10 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path='/Task-2/' element={<LandingPage />} />
-        <Route path='/Task-2/detail' element={<DetailPage />} />
-        <Route path='/Task-2/properties' element={<PropertiesPage />} />
-        <Route path='/Task-2/contact' element={<ContactPage />} />
+        <Route path='/Task-3-Adv/' element={<LandingPage />} />
+        <Route path='/Task-3-Adv/detail' element={<DetailPage />} />
+        <Route path='/Task-3-Adv/properties' element={<PropertiesPage />} />
+        <Route path='/Task-3-Adv/contact' element={<ContactPage />} />
       </Routes>
       <Footer />
     </>
